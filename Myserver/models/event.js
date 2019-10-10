@@ -10,7 +10,7 @@ const eventSchema = new schema({
     },
     password:{
         type:String,
-        required:false
+        required:true
     }
 })
 
