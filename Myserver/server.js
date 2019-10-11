@@ -86,7 +86,7 @@ app.use('/api',graphqlHttp({
 
                 
             }).catch(err =>{
-                throw err;
+                throw new Error("absolut error");
             })
           
         },
