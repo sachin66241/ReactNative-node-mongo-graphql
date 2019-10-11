@@ -8,9 +8,17 @@ const eventSchema = new schema({
         type:String,
         required:true
     },
-    password:{
+    price:{
         type:String,
         required:true
+    },
+    destination:{
+        type:String,
+        required:true
+    },
+    creator:{
+        type:schema.Types.ObjectId,
+        ref: 'User'
     }
 })
 
