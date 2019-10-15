@@ -104,7 +104,7 @@ app.use('/api',graphqlHttp({
                 })
                 return user.save().then(result=>{
                     console.log(result)
-                    return {...result._doc};
+                    return {...result._doc};//aaaa
                 })
             }).catch(err=>{
                 throw err;
